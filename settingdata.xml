@@ -1,0 +1,132 @@
+<SettingData>
+  <ProjSettingData>
+    <ID Identifier="ID"  Name="客户id" SettingDataType="4" ValueType="4" Key ="cliId"  SettingDataFlag="0" ></ID>
+    <NAME Identifier="NAME"  Name="客户名字" SettingDataType="4" ValueType="4" Key ="cliName"  SettingDataFlag="0" ></NAME>
+  </ProjSettingData>
+
+  <TaskSettingData>
+    <SYMX Identifier="SYMX"  Name="试验模型" SettingDataType="4" ValueType="4" Key ="modelName"  SettingDataFlag="0" ></SYMX>
+    <SYLX Identifier="SYLX"  Name="试验类型" SettingDataType="4" ValueType="4" Key ="taskType"  SettingDataFlag="0" ></SYLX>
+  </TaskSettingData>
+</SettingData>
+
+  <!--uint32_t m_id;
+  std::string m_identifier;
+  std::string m_name;
+  SettingDataType m_settingType;
+  ValueType m_valueType;
+  std::string m_value;
+  SettingDataFlag m_dataFlag;
+  long m_pid;-->
+
+
+
+  <!--TaskSettingData gasSourcePress{ 0,SYMX,"试验模型",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["modelName"].GetString(),SettingDataFlag::UNDEFINE,2};
+  m_mapSetData.insert({ "试验模型", gasSourcePress });
+
+  TaskSettingData set1{ 0,TP,"天平",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["balCode"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "天平", set1 });
+
+  TaskSettingData set2{ 0,SYLX,"试验类型",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["taskType"].GetString(),SettingDataFlag::UNDEFINE,2 };//tasktype null
+  m_mapSetData.insert({ "试验类型", set2 });
+
+  TaskSettingData set3{ 0,"PG","喷管",SettingDataType::TASK_PARAM,ValueType::TXT,"任务单信息无此项",SettingDataFlag::UNDEFINE,2 };//没有
+  m_mapSetData.insert({ "喷管", set3 });
+
+  TaskSettingData set4{ 0,P0,"总压",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["p0list"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "总压", set4 });
+
+  TaskSettingData set5{ 0,M,"马赫数",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["machList"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "马赫数", set5 });
+
+  TaskSettingData set6 { 0,PZLX,"喷嘴类型",SettingDataType::TASK_PARAM,ValueType::TXT,std::to_string(taskJson["nozzleNo"].GetInt()),SettingDataFlag::UNDEFINE,2};//有nozzleNo 1
+  m_mapSetData.insert({ "喷嘴类型", set6 });
+
+  TaskSettingData set7 { 0,ALPHA,"alpha",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["alphaList"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "alpha", set7 });
+
+  TaskSettingData set8{ 0,BETA,"beta",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["betaList"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "beta", set8 });
+
+  TaskSettingData set9{ 0,GAMA,"gama",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["gammaList"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "gama", set9 });
+
+  TaskSettingData set10{ 0,JT,"阶梯",SettingDataType::TASK_PARAM,ValueType::TXT,taskJson["alphaList"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "阶梯", set10 });-->
+
+
+  <!--ProjSettingData set0{ 0,CLI_ID,"客户id",SettingDataType::PROJ_PARAM,ValueType::TXT,std::to_string(taskJson["cliId"].GetInt()),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "客户id", set0 });
+
+  ProjSettingData set1{ 0,CLI_NAME,"客户名字",SettingDataType::PROJ_PARAM,ValueType::TXT,taskJson["cliName"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "客户名字", set1 });
+
+  ProjSettingData set2{ 0,BY_STA_ID,"项目负责人id",SettingDataType::PROJ_PARAM,ValueType::TXT,std::to_string(taskJson["byStaId"].GetInt()),SettingDataFlag::UNDEFINE,2 };//tasktype null
+  m_mapSetData.insert({ "项目负责人id", set2 });
+
+  ProjSettingData set3{ 0,"BY_STA_TRUE_NAME","项目负责人名字",SettingDataType::PROJ_PARAM,ValueType::TXT,taskJson["byStaTrueName"].GetString(),SettingDataFlag::UNDEFINE,2 };//没有
+  m_mapSetData.insert({ "项目负责人名字", set3 });
+
+  ProjSettingData set4{ 0,BY_WT_NAME,"风洞名字",SettingDataType::PROJ_PARAM,ValueType::TXT,taskJson["byWtname"].GetString(),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "风洞名字", set4 });
+
+  ProjSettingData set5{ 0,PLAN_NO_NUM,"计划车次数",SettingDataType::PROJ_PARAM,ValueType::TXT,std::to_string(taskJson["planNoNum"].GetInt()),SettingDataFlag::UNDEFINE,2 };
+  m_mapSetData.insert({ "计划车次数", set5 });
+
+  ProjSettingData set6{ 0,TRUE_NO_NUM,"实际车次数",SettingDataType::PROJ_PARAM,ValueType::TXT,std::to_string(taskJson["trueNoNum"].GetInt()),SettingDataFlag::UNDEFINE,2 };//有nozzleNo 1
+  m_mapSetData.insert({ "实际车次数", set6 });-->
+
+
+
+
+  <!--用户操作配置:
+        UserOps/(*Device)节点配置说明:
+            (*Device)取值如下：
+                Vehicle 列车操作
+                TotallineVehicle 批量列车操作
+                Platform 站台操作
+        UserOps/(*Device)/Op 节点配置说明:
+            OpType(GA配置):操作码(联锁操作命令来源于<<ATS与联锁接口文档>>,其它操作来源于内部接口文档)
+            ValueType:操作对应的报文中附加数据类型（GA配置）
+                Null 附加数据为空
+                One  附加数据为 Value(固定值)
+                List 附加数据为 vector<DevId>+Value(固定值)
+                OneChange 附加数据为 Value(可变值)
+                ListChange 附加数据为 vector<DevId>+Value(可变值)
+                OneVec 附加数据为 NumValue + vector<Uint8> (仅车辆远程隔离0x011A可配)
+                Two  附加数据为，Value1+Value2  (仅车辆参数0x0115设置可配 目前不使用)
+                TwoList 附加数据为列表，vector<DevId>+Value1+Value2  (仅多车车辆参数设置0x0135可配 目前不使用)
+            ToObject:操作报文下发给其他子系统的类型
+                UtoCcCmd     Uto命令 0x0204
+                UtoVehCmd    车辆设备命令 0x0160
+                UtoParamCmd  车辆参数命令 0x0161
+                UtoPowerCmd  电源命令 0x016F
+        UserOps/(*Device)/Op/key 节点配置说明:
+            Name 操作名(GA配置) 必填
+            ToObject 取值与UserOps/(*Device)/Op下的ToObject配置相同 当该字段有配置时优先使用
+            InnerIntfValue  内部接口值 来源于内部接口文档 当ValueType为One,List时需要配置 默认 0xFFFFFFFF
+            ExternIntfValue 外部部接口值 下发给CC子系统时相应报文里填的值 来源于800接口文档  当ToObject为Cbi可不填
+            ExpectExpression 操作响应成功判断条件表达式 目前不判断超时
+            Timeout 操作响应超时时间 单位 秒  目前不判断超时  默认 5
+            NameOfTimeCfg 超时时间配置 当配置时优先使用该配置值在utsPrj下对应的配置 目前不判断超时
+            AlarmType 超时告警类型 目前不判断超时
+            CancelAlarmType 操作需要取消的互斥告警类型 目前不判断超时
+            ExtraData 额外的数据配置 需要代码处理
+            IsLog 是都打印日志 默认true
+            ReMark 备注
+        UserOps/(*Device)/Op/key/PreCheck 节点配置说明:
+            Condition 预检查条件 
+            ErrCode 预检查不通过返回的错误码 
+            ReMark 备注
+    -->
+        <!-- <Vehicle> -->
+            <!-- <Op OpType="0x011C" ValueType="List" ToObject="UtoCcCmd"> -->
+                <!-- <Key Name="AgreeEscapeDoorUnlock" InnerIntfValue="1" ExternIntfValue="1" ExpectExpression="" ReMark="同意逃生门紧急解锁" > -->
+                    <!-- <PreCheck Condition="CcMode=0x8|CcMode=0x9" ErrCode="0x30" ReMark="Not Fam/Cam Mode" /> -->
+                <!-- </Key> -->
+                <!-- <Key Name="Disagree/Reset EsacapeDoorUnlock" InnerIntfValue="2" ExternIntfValue="2" ExpectExpression="" ReMark="拒绝/复位逃生门紧急解锁" > -->
+                    <!-- <PreCheck Condition="CcMode=0x8|CcMode=0x9" ErrCode="0x30" ReMark="Not Fam/Cam Mode" /> -->
+                <!-- </Key> -->
+            <!-- </Op> -->
+        <!-- </Vehicle> -->
+
